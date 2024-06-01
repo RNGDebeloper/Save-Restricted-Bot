@@ -13,7 +13,7 @@ services:
   - key: STRING
     sync: false
   - key: PORT
-    sync: 10000
+    value: 10000
   - key: ID
     sync: false
   - key: HASH
