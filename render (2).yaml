@@ -1,0 +1,24 @@
+# Exported from Render on 2024-06-01T18:04:07Z
+services:
+- type: web
+  name: Save-Restricted-Bot
+  runtime: python
+  repo: https://github.com/bipinkrish/Save-Restricted-Bot
+  plan: free
+  envVars:
+  - key: PYTHON_VERSION
+    sync: false
+  - key: TOKEN
+    sync: false
+  - key: STRING
+    sync: false
+  - key: PORT
+    sync: false
+  - key: ID
+    sync: false
+  - key: HASH
+    sync: false
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: python3 main.py
+version: "1"
